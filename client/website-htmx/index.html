@@ -1,0 +1,61 @@
+
+    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My htmx Go Project</title>
+    <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+    <h1>My htmx Go Project</h1>
+
+    <!-- Example: Button to Trigger API Call -->
+    <button hx-get="/api/data" hx-swap="innerHTML">Load Data</button>go
+
+    <!-- Display Area for API Response -->
+    <div id="api-response"></div>
+
+    <!-- Example: Form Submission -->
+    <form hx-post="/api/send-email" hx-trigger="submit" hx-swap="innerHTML">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Send Email</button>
+    </form>
+
+    <script>
+        // Fetch Markdown content from file or other source
+        fetch('content.md')
+            .then(response => response.text())
+            .then(markdown => {
+                // Convert Markdown to HTML
+                const converter = new showdown.Converter();
+                const html = converter.makeHtml(markdown);
+
+                // Display HTML in the container
+                document.getElementById('markdown-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching Markdown content:', error));
+    </script>
+
+
+     <h1>Blog Posts</h1>
+
+    <!-- Container for Blog Posts -->
+    <div id="blogposts-container"></div>
+
+    <!-- Button to Load Blog Posts -->
+    <button hx-get="/api/blogposts" hx-swap="outerHTML" hx-target="#blogposts-container">Load Blog Posts</button>
+
+    <script>
+        // Register htmx event handler after the page is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Example: Manually trigger the initial load
+            document.getElementById('blogposts-container').innerHTML = '<p>No blog posts loaded yet.</p>';
+        });
+    </script>
+
+</body>
+</html>
+
