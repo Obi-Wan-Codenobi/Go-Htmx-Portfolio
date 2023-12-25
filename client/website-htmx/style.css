@@ -1,0 +1,131 @@
+
+body {
+    
+    align-items: center;
+    background-color: #21262d;
+    color: #fff;
+    margin: 0 auto;
+    width: 50%; 
+    text-align: left; 
+}
+
+h1 {
+    color: #f0f6fc;
+}
+
+p {
+    color: #f0f6fc;
+}
+
+code {
+    text-align: center;
+    align-items: center;
+}
+
+table {
+  
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+ul, ol {
+  text-align: left;
+  margin: 16px 0;
+}
+
+li {
+  margin-bottom: 8px;
+  text-align:left;
+}
+
+ul, ol, li {
+  text-align: left;
+}
+
+#api-response{
+    color: #f0f6fc;
+    text-align: left;
+    align-items: left;
+
+}
+
+button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: #fff;
+    background-color: #1ED760;
+    height: 48px;
+    :hover{
+        transform: scale(1.04);
+        background-color: #21e065;
+    }
+}
+
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+input:checked + .slider + label + body {
+    background-color: #ffffff;
+    color: #333333;
+}
