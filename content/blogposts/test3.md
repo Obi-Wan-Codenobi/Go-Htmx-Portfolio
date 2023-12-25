@@ -16,6 +16,7 @@ Here, let's try out some more advanced features:
 
 > This is a blockquote.
 > You can use it for citations or emphasizing text.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique euismod ligula ut hendrerit. In quis euismod libero, vel scelerisque lectus. Maecenas tincidunt malesuada luctus. Etiam et pharetra nunc. Vivamus dictum felis eu dictum interdum. Aliquam feugiat quam in diam volutpat, sit amet euismod dui ultricies. Nunc convallis eros et nunc egestas cursus. Maecenas ut nulla et libero vulputate vulputate. Praesent id odio non justo eleifend aliquet.
 
 Sed convallis, justo eget tincidunt fermentum, metus velit semper ligula, vel pharetra mi elit sit amet nunc. Curabitur nec leo vel mi semper sagittis. Fusce id elit ut libero fringilla facilisis ac id mi. Vivamus eget dui odio. Vivamus ultricies scelerisque libero, vel consequat libero iaculis sit amet. Nulla tincidunt eu lacus sit amet tincidunt. Vivamus ac libero in velit congue vehicula sit amet nec leo. Fusce varius elit nec mauris euismod euismod.
