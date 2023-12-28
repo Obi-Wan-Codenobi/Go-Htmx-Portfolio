@@ -17,11 +17,11 @@ p {
     color: #f0f6fc;
 }
 
-code {
-    text-align: center;
+pre {
     align-items: center;
+    background-color: #9CA3AF;
 }
-
+ 
 table {
   
   border-collapse: collapse;
