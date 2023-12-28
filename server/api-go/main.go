@@ -92,7 +92,7 @@ func fetchMarkdownFilesFromGitHub() ([]string, error) {
 }
 
 func fetchGitHubContent(url string) ([]GitHubContent, error) {
-    resp, err := http.Get(url)
+	resp, err := http.Get(url)
     if err != nil {
         return nil, err
     }
@@ -113,7 +113,6 @@ func fetchGitHubContent(url string) ([]GitHubContent, error) {
 
     return content, nil
 }
-
 
 
 func fetchFileContent(url string) (string, error) {
